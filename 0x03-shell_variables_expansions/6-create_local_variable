@@ -1,0 +1,3 @@
+echo '#!/bin/bash
+BEST="School"' > 6-create_local_variable
+chmod +x 6-create_local_variable

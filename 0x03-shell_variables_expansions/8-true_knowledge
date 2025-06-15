@@ -1,0 +1,3 @@
+echo '#!/bin/bash
+echo $((128 + TRUEKNOWLEDGE))' > 8-true_knowledge
+chmod +x 8-true_knowledge

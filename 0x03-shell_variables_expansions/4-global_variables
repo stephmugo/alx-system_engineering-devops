@@ -1,0 +1,3 @@
+echo '#!/bin/bash
+printenv' > 4-global_variables
+chmod +x 4-global_variables
