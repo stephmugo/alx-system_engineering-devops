@@ -1,3 +1,2 @@
-echo '#!/bin/bash
-echo $PATH | tr '"'"':'"'"' '"'"'\n'"'"' | wc -l' > 3-paths
-chmod +x 3-paths
+#!/bin/bash
+echo "$PATH" | tr ':' '\n' | wc -l

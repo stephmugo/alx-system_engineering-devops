@@ -1,3 +1,2 @@
-echo '#!/bin/bash
-export BEST="School"' > 7-create_global_variable
-chmod +x 7-create_global_variable
+#!/bin/bash
+export BEST="School"

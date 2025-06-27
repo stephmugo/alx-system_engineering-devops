@@ -1,3 +1,2 @@
-echo '#!/bin/bash
-set' > 5-local_variables
-chmod +x 5-local_variables
+#!/bin/bash
+set
