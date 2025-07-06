@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Configures UFW to allow only ports 22, 80, and 443, blocking all other incoming traffic
+
+# shellcheck disable=SC2154
+
+ufw default deny incoming
+ufw default allow outgoing
+ufw allow 22/tcp
+ufw allow 80/tcp
+ufw allow 443/tcp
+ufw --force enable
