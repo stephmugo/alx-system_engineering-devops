@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Configures a web server with Nginx and sets a custom HTTP header "X-Served-By"
+
+# Ignore SC2154 as required
+# shellcheck disable=SC2154
+
+apt-get update
+apt-get install -y nginx
+
+# Ensure hostname is set correctly (optional, adjust if needed)
+hostnamectl set-hostname "$(hostname)"
+
+# Add custom header using sed in nginx config
+sed -i '/^.*location \/ {/a \\tadd_header X-Served-By $hostname;' /etc/nginx/sites-available/default
+
+# Restart nginx to apply changes
+systemctl restart nginx
